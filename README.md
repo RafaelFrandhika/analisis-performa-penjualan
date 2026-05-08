@@ -19,52 +19,11 @@ Quantity → Total_Sales: 0.92 (korelasi sangat kuat) — semakin banyak quantit
 UnitPrice → Total_Sales: -0.13 (korelasi negatif lemah) — produk dengan harga tinggi justru cenderung menghasilkan pendapatan lebih rendah, kemungkinan karena pembeliannya sedikit.
 Quantity → UnitPrice: -0.0012 (hampir tidak ada korelasi) — harga produk tidak mempengaruhi seberapa banyak produk dibeli.
 
-### Tren Penjualan Bulanan
-![Tren Penjualan](tren_penjualan.png)
-> Penjualan terendah terjadi pada April 2011 (~430.000) dan terus meningkat
-> drastis hingga puncaknya di November 2011 (~1,13 juta). Penurunan tajam
-> di Desember 2011 kemungkinan karena data bulan tersebut belum lengkap.
+<img width="947" height="756" alt="grafik bar chart" src="https://github.com/user-attachments/assets/ee4c1b78-790d-473c-b174-cd464cd1bfa1" />
 
-### Heatmap Korelasi
-![Heatmap](heatmap.png)
-> Quantity memiliki korelasi sangat kuat terhadap Total_Sales (0.92),
-> artinya semakin banyak barang terjual maka pendapatan semakin besar.
-> Sebaliknya, UnitPrice justru berkorelasi negatif (-0.13) terhadap
-> Total_Sales, menunjukkan produk mahal tidak selalu menghasilkan
-> pendapatan lebih tinggi.
-
-### Produk Underperformer
-![Scatter Plot](scatter.png)
-> Sebagian besar produk menumpuk di kisaran harga di bawah rata-rata
-> (Rp 3.99) dengan penjualan tinggi. Namun terdapat beberapa produk
-> dengan harga sangat tinggi (hingga 700+) yang quantity terjualnya
-> mendekati nol — inilah produk underperformer yang perlu dievaluasi.
-
-### RFM Analysis
-![RFM](rfm.png)
-> Segmentasi pelanggan berhasil dilakukan dengan skor 1–5 pada tiga
-> dimensi. Pelanggan dengan RFM Group 555 adalah pelanggan Champions —
-> paling baru bertransaksi, paling sering belanja, dan pengeluaran
-> terbesar. Pelanggan dengan skor rendah seperti 211 berisiko churn
-> dan perlu pendekatan retensi.
-
-### Efisiensi Kategori vs Anggaran Iklan
-![Bar Chart](barchart.png)
-> REGENCY CAKESTAND 3 TIER memiliki rasio efisiensi tertinggi (~0.13),
-> jauh di atas produk lainnya. Artinya produk ini menghasilkan penjualan
-> terbesar dibanding anggaran iklan yang dikeluarkan. Sebaliknya,
-> kelompok produk LUNCH BAG memiliki efisiensi paling rendah.
-
-### Pengaruh Ad_Budget terhadap Penjualan
-![Hipotesis](hipotesis.png)
-> Rata-rata penjualan kelompok iklan tinggi (Rp 20.08) justru sedikit
-> lebih rendah dibanding iklan rendah (Rp 20.73). Hal ini menunjukkan
-> bahwa Ad_Budget tidak berpengaruh signifikan — wajar karena kolom
-> ini disimulasikan secara acak, bukan data nyata.
-
-### Regresi Linear
-> - Koefisien Iklan : (isi dari output Sel 12)
-> - R² Score        : (isi dari output Sel 12)
+REGENCY CAKESTAND 3 TIER memiliki rasio efisiensi tertinggi (~0.13) — produk ini menghasilkan penjualan paling besar dibanding anggaran iklan yang dikeluarkan.
+Kelompok produk LUNCH BAG (Cars Blue, Black Skull, Spaceboy) memiliki efisiensi paling rendah (~0.02–0.03) — anggaran iklan yang dikeluarkan tidak sebanding dengan penjualan yang dihasilkan.
+Produk dekorasi seperti PARTY BUNTING dan WHITE HANGING HEART T-LIGHT HOLDER juga menunjukkan efisiensi yang cukup tinggi.
 
 ## 4. Recommendation
 - **Pertahankan pelanggan Champions (RFM 555)** dengan program loyalitas
